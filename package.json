@@ -1,0 +1,33 @@
+{
+  "name": "site",
+  "version": "0.0.1",
+  "description": "Test Site",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -d --watch",
+    "dev": "webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Drew Theasby",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "lodash": "^4.17.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "ts-loader": "^2.0.0",
+    "typescript": "^2.1.5",
+    "typings": "^2.1.0",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.52",
+    "lodash": "^4.17.4",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0"
+  }
+}
