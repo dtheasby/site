@@ -2,10 +2,10 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
-import calcReducer from "./reducers/CalculatorReducer";
+import CalcApp from "./reducers/index";
 import App from "./App";
 
-const store = createStore(calcReducer);
+const store = createStore(CalcApp);
 
 ReactDOM.render(
     <Provider store={store}>
