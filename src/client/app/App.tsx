@@ -1,10 +1,14 @@
 import * as React from 'react';
-import Sidebar from "./components/Sidebar"
+import Sidebar from "./components/Sidebar";
 
-class App extends React.Component<any, {}> {
-    render () {
-        return <Sidebar />
-    }
-}
+export default () => (<Sidebar/>)
 
-export default App;
+// class App extends React.Component<any, {}> {
+//     render() {
+//         return (
+//                 <Sidebar />
+//         )
+//     }
+// }
+
+// export default App;

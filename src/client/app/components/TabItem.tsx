@@ -1,25 +1,21 @@
 import * as React from "react";
+import "./tabitem.scss"
 
 const TabItem = (props: any) => {
     const { children, active, onClick } = props;
-
-    if (active) {
-        return (<div className="link">
-            <a href="#" onClick={e => {
+    let showing = (active) ? "active" : "";
+    
+    console.log("render tabitem");
+    return (<div className="link">
+            <a href="#" className={showing} onClick={e => {
                 e.preventDefault()
                 onClick()
             }}>{children}</a>
         </div>
         )
-    } else {
-        return (<div className="link">
-            <a href="#" onClick={e => {
-                e.preventDefault()
-                onClick()
-            }}>Not Active</a>
-        </div>
-        )
-    }
 }
+
+
+
 
 export default TabItem;

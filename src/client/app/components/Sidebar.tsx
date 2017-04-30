@@ -1,21 +1,16 @@
 import * as React from "react";
 import TabContainer from "../Containers/TabContainer";
 import tabData from "../data/tabs";
+import "./sidebar.scss"
 
+export default () => {
+    console.log("render sidebar");
+return (
 
-class Sidebar extends React.Component<any, {}>{
-    constructor(props:any){
-        super(props)
-    }
-
-    
-    render() {
-        return <div>
+         <div className="sidebar">
             <TabContainer filter="Home">First Link</TabContainer>
             <TabContainer filter="Second">Second Link</TabContainer>
             <TabContainer filter="Third">Third Link</TabContainer>
         </div>
-    }
-}
+)};
  
-export default Sidebar;
